@@ -2,23 +2,21 @@
 
 Una aplicación de un carrito electrónico desarrollada con JavaScript vanilla, Vite y JSON Server que permite navegar productos, filtrarlos y gestionar un carrito de compras.
 
-## ✨ Características
+## aracterísticas
 
 - **Catálogo de productos** con filtros por categoría, productos destacados y rango de precios
-- 🛒 **Carrito de compras** persistente con localStorage
-- ✅ **Validación de stock** automática
-- 💰 **Cálculo de totales** con impuestos incluidos
+- **Carrito de compras** persistente con localStorage
 
-## 🛠️ Uso
+## 🛠Uso
 
-Para ejecutar la aplicación necesitas **dos terminales**:
+Para ejecutar la aplicación se necesitan ejecutar los siguientes comandos:
 
-### Terminal 1 - Servidor de desarrollo (Vite):
+### Para el Servidor de desarrollo (Vite):
 ```bash
 npm run dev
 ```
 
-### Terminal 2 - API Server (JSON Server):
+### Para la API Server (JSON Server):
 ```bash
 npm run server
 ```
