@@ -1,0 +1,132 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Smartphone Premium",
+      "price": 599.99,
+      "image": "📱",
+      "category": "tecnologia",
+      "description": "Último modelo con cámara de 108MP y 5G",
+      "stock": 15,
+      "featured": true
+    },
+    {
+      "id": 2,
+      "name": "Laptop Gaming",
+      "price": 1299.99,
+      "image": "💻",
+      "category": "tecnologia",
+      "description": "Perfecta para gaming con RTX 4060 y 16GB RAM",
+      "stock": 8,
+      "featured": true
+    },
+    {
+      "id": 3,
+      "name": "Auriculares Bluetooth",
+      "price": 79.99,
+      "image": "🎧",
+      "category": "audio",
+      "description": "Cancelación de ruido activa y 30h de batería",
+      "stock": 25,
+      "featured": false
+    },
+    {
+      "id": 4,
+      "name": "Cámara Digital",
+      "price": 449.99,
+      "image": "📷",
+      "category": "fotografia",
+      "description": "24MP con lente intercambiable y 4K video",
+      "stock": 12,
+      "featured": true
+    },
+    {
+      "id": 5,
+      "name": "Smartwatch",
+      "price": 249.99,
+      "image": "⌚",
+      "category": "tecnologia",
+      "description": "Monitor de salud 24/7 y GPS integrado",
+      "stock": 20,
+      "featured": false
+    },
+    {
+      "id": 6,
+      "name": "Tablet Pro",
+      "price": 899.99,
+      "image": "📱",
+      "category": "tecnologia",
+      "description": "12.9 pulgadas con stylus incluido",
+      "stock": 10,
+      "featured": true
+    },
+    {
+      "id": 7,
+      "name": "Altavoz Inteligente",
+      "price": 129.99,
+      "image": "🔊",
+      "category": "audio",
+      "description": "Control por voz y sonido 360°",
+      "stock": 18,
+      "featured": false
+    },
+    {
+      "id": 8,
+      "name": "Teclado Mecánico",
+      "price": 159.99,
+      "image": "⌨️",
+      "category": "accesorios",
+      "description": "Switches Cherry MX con retroiluminación RGB",
+      "stock": 30,
+      "featured": false
+    },
+    {
+      "id": 9,
+      "name": "Mouse Gaming",
+      "price": 89.99,
+      "image": "🖱️",
+      "category": "accesorios",
+      "description": "12000 DPI con peso ajustable",
+      "stock": 22,
+      "featured": false
+    },
+    {
+      "id": 10,
+      "name": "Monitor 4K",
+      "price": 399.99,
+      "image": "🖥️",
+      "category": "tecnologia",
+      "description": "27 pulgadas Ultra HD con HDR",
+      "stock": 6,
+      "featured": true
+    }
+  ],
+  "categories": [
+    {
+      "id": "tecnologia",
+      "name": "Tecnología",
+      "icon": "💻"
+    },
+    {
+      "id": "audio",
+      "name": "Audio",
+      "icon": "🎧"
+    },
+    {
+      "id": "fotografia",
+      "name": "Fotografía",
+      "icon": "📷"
+    },
+    {
+      "id": "accesorios",
+      "name": "Accesorios",
+      "icon": "⌨️"
+    }
+  ],
+  "config": {
+    "currency": "USD",
+    "tax_rate": 0.08,
+    "shipping_cost": 9.99,
+    "free_shipping_threshold": 100
+  }
+}

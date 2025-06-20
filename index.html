@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras - Práctica JS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🛒 Mi Tienda Online</h1>
+            <p>Productos increíbles a precios increíbles</p>
+            <div class="cart-icon">
+                🛒
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="products-section">
+                <h2>📦 Productos Disponibles</h2>
+                <div class="products-grid" id="productsGrid">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+            </section>
+
+            <aside class="cart-section">
+                <h2>🛒 Mi Carrito</h2>
+                <div class="cart-items" id="cartItems">
+                    <div class="empty-cart">
+                        Tu carrito está vacío 😔
+                    </div>
+                </div>
+                <div class="cart-total">
+                    <div class="total-amount">
+                        Total: $<span id="totalAmount">0.00</span>
+                    </div>
+                    <button class="checkout-btn">
+                        💳 Proceder al Pago
+                    </button>
+                </div>
+            </aside>
+        </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
