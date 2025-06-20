@@ -3,16 +3,20 @@ import { ApiService } from "../models/ApiService";
 import { Product } from "../models/Product";
 
 
-class ProductController {
+export class ProductController {
 
     constructor() {
         this.products = []
     }
 
-    async cargarProductos() {
+    
+
+    async loadProducts() {
         try {
         const apiService = new ApiService();
         const data = await apiService.getProducts();
+        console.log(data);
+
         this.products = data.map(obj => Product.fromJson(obj));
         renderProductos(this.products);
         } catch (error) {

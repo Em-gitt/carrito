@@ -31,8 +31,18 @@ export class Product {
     }
 
     static fromJson(data) {
-        return new Product(data.name, data.price, data.stock);
+        return new Product({
+            id: data.id,
+            name: data.name,
+            price: data.price,
+            image: data.image,
+            category: data.category,
+            description: data.description,
+            stock: data.stock,
+            featured: data.featured
+        });
     }
+
 
     isInStock(quantity = 1) {
         return this.stock >= quantity;

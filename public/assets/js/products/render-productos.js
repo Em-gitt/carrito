@@ -1,7 +1,9 @@
+import productController, { ProductController } from "../../../../src/controllers/productController";
 
 
 export const renderProductos = async(products) => {
     console.log("hola");
+
     
     const container = document.getElementById('productsGrid');
     if (!container) return;
@@ -27,23 +29,23 @@ export const renderProductos = async(products) => {
 
 }
 
-showLoadingState = () => {
-    document.getElementById('emptyState').style= 'display: none;'
+const showLoadingState = () => {
+    // document.getElementById('emptyState').style= 'display: none;'
     document.getElementById('loadingState').style= 'display: block;'
 }
 
-showEmptyState = () => {
-    document.getElementById('loadingState').style= 'display: none;'
+const showEmptyState = () => {
+    // document.getElementById('loadingState').style= 'display: none;'
     document.getElementById('emptyState').style= 'display: block;'
 }
 
-hideStates = () => {
+const hideStates = () => {
   document.getElementById('loadingState').style= 'display: none;'
   document.getElementById('emptyState').style= 'display: none;'
 
 }
 
- createProductCard = (product) => {
+const createProductCard = (product) => {
   const card = document.createElement('div');
   card.className = 'product-card';
 
