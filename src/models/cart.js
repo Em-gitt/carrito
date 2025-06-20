@@ -6,13 +6,15 @@ export class Cart {
      * 
      * @param {Like<Cart>} cartDataLike 
      */
-    constructor( { id, isActive, balance, avatar, firstName, lastName, gender } ){
+    constructor( { id, name, price, image, category, category, description, stock, featured } ){
         this.id = id;
-        this.isActive = isActive;      
-        this.balance = balance;
-        this.avatar = avatar;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
+        this.name = name;      
+        this.price = price;
+        this.image = image;
+        this.category = category;
+        this.description = description;
+        this.stock = stock;
+        this.featured = featured;
+
     }
 }

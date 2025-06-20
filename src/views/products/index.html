@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mi Tienda</title>
+    <link rel="stylesheet" href="../../../public/assets/css/products/products.css">
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">🛒 Mi Tienda</a>
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products" class="active">Productos</a></li>
+                <li><a href="#about">Nosotros</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <a href="../cart/index.html" class="cart-indicator">
+                🛒 Carrito
+                <span class="cart-count" id="cartCount">0</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-container">
+        <!-- PAGE HEADER -->
+        <header class="page-header">
+            <h1 class="page-title">📦 Nuestros Productos</h1>
+            <p class="page-subtitle">Descubre nuestra increíble selección de productos</p>
+        </header>
+
+        <!-- FILTERS SECTION -->
+        <section class="filters-section">
+            <div class="filters-container">
+                <div class="filter-group">
+                    <label class="filter-label">Buscar productos:</label>
+                    <input type="text" class="filter-input" placeholder="Nombre del producto..." id="searchInput">
+                </div>
+                
+                <div class="filter-group">
+                    <label class="filter-label">Categoría:</label>
+                    <select class="filter-select" id="categoryFilter">
+                        <option value="">Todas las categorías</option>
+                        <option value="tecnologia">Tecnología</option>
+                        <option value="audio">Audio</option>
+                        <option value="fotografia">Fotografía</option>
+                        <option value="accesorios">Accesorios</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Precio máximo:</label>
+                    <input type="number" class="filter-input" placeholder="0.00" id="priceFilter">
+                </div>
+
+                <div class="filter-group">
+                    <label class="filter-label">Solo destacados:</label>
+                    <input type="checkbox" id="featuredFilter" class="filter-checkbox">
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="btn-filter" id="applyFilters">Filtrar</button>
+                    <button class="btn-clear" id="clearFilters">Limpiar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS SECTION -->
+        <section class="products-section">
+            <div class="products-header">
+                <div class="products-count" id="productsCount">
+                    Mostrando 0 productos
+                </div>
+                <select class="sort-select" id="sortSelect">
+                    <option value="name-asc">Nombre A-Z</option>
+                    <option value="name-desc">Nombre Z-A</option>
+                    <option value="price-asc">Precio menor</option>
+                    <option value="price-desc">Precio mayor</option>
+                </select>
+            </div>
+
+            <!-- PRODUCTS GRID -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Los productos se cargarán dinámicamente aquí -->
+            </div>
+
+            <!-- LOADING STATE -->
+            <div class="loading-state" id="loadingState" style="display: none;">
+                <div class="loading-spinner"></div>
+                <p>Cargando productos...</p>
+            </div>
+
+            <!-- EMPTY STATE -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <h3>😔 No se encontraron productos</h3>
+                <p>Intenta cambiar los filtros de búsqueda</p>
+            </div>
+        </section>
+    </main>
+<script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
